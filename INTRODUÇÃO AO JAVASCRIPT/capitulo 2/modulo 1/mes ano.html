@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maior menor</title>
+    </head>
+    <body>
+        <form name="meuform" action="" method="POST">
+        <h3>Digite um numero e eu irei falar o mes</h3>
+        <p>Número: <input type="number" name="f_n1" placeholder="Ex: 1" /></p>
+
+        <input type="button" name="btn_maiormenor" value="Calcule" onclick="mes()" />
+        <input type="reset" name="btn_reset" />
+
+        <input type="text" name="f_nomemes" size="18" maxlength="15" />
+
+        </form>    
+
+
+        <script language="Javascript">
+            var n1;
+            
+            
+
+            function mes(){
+                n1 = parseInt(document.meuform.f_n1.value);
+
+
+                switch(n1){
+                    case 1: document.meuform.f_nomemes.value ='Janeiro';break;
+                    case 2: document.meuform.f_nomemes.value ='Fevereiro';break;
+                    case 3: document.meuform.f_nomemes.value ='Março';break;
+                    case 4: document.meuform.f_nomemes.value ='Abril';break;
+                    case 5: document.meuform.f_nomemes.value ='Maio';break;
+                    case 6: document.meuform.f_nomemes.value ='Junho';break;
+                    case 7: document.meuform.f_nomemes.value ='Julho';break;
+                    case 8: document.meuform.f_nomemes.value ='Agosto';break;
+                    case 9: document.meuform.f_nomemes.value ='Setembro';break;
+                    case 10: document.meuform.f_nomemes.value ='Outubro';break;
+                    case 11: document.meuform.f_nomemes.value ='Novembro';break;
+                    case 12: document.meuform.f_nomemes.value ='Dezembro';break;
+                    default: document.meuform.f_nomemes.value ='Inválido'; break;
+                }
+            }
+            
+        </script>
+    </body>
+</html>

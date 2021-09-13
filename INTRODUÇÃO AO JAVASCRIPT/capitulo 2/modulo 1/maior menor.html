@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maior menor</title>
+    </head>
+    <body>
+        <form name="meuform" action="" method="POST">
+        <h3>Digite dois números e falarei qual é o maior</h3>
+        <p>Número 1: <input type="number" name="f_n1" placeholder="Ex: 1" /></p>
+        <p>Número 2: <input type="number" name="f_n2" placeholder="Ex: 1" /></p>
+        <input type="button" name="btn_maiormenor" value="Calcule" onclick="maiormenor()" />
+        <input type="reset" name="btn_reset" />
+        </form>    
+
+
+        <script language="Javascript">
+            var n1;
+            var n2;
+            var nmaior;
+
+            function maiormenor(){
+                n1 = document.meuform.f_n1.value;
+                n2 = document.meuform.f_n2.value;
+
+                if(n1>n2){
+                    nmaior ='A ordem crescente é: ' + n2 +' '+ n1;
+                    window.alert(nmaior);
+                }
+                else if(n2>n1){
+                    nmaior = 'A ordem crescente é: ' + n1 + ' ' +n2;;
+                    
+                    window.alert(nmaior);
+                }
+                else{
+                    nmaior = 'Os dois números são iguais';
+                    window.alert(nmaior);
+                }
+            }
+        </script>
+    </body>
+</html>
